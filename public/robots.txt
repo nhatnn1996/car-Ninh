@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://qnsport.vn
+
+# Sitemaps
+Sitemap: https://qnsport.vn/sitemap.xml
+Sitemap: https://qnsport.vn/server-sitemap-index.xml
