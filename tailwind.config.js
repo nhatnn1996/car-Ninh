@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const colors = require('tailwindcss/colors');
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -23,6 +25,10 @@ module.exports = {
           gray: '#202227',
           text: '#666',
         },
+        ...colors,
+        primary: '#ff2a39',
+        black: '#34373b',
+        body: '#777',
       },
       keyframes: ({ theme }) => ({
         pulse: {
