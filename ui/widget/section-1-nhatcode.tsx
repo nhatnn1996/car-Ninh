@@ -40,6 +40,12 @@ const Header = () => {
                 {name}
               </div>
             ))}
+            <div className="ml-10">Home</div>
+            <div className="ml-10">About</div>
+            <div className="ml-10">Services</div>
+            <div className="ml-10">Blog</div>
+            <div className="ml-10">Contact</div>
+            
           </div>
           <div className="item-center ml-auto flex">
             <ShoppingBagIcon className="h-6 w-5 stroke-black" />
