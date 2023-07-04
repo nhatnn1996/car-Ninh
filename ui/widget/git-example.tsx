@@ -15,13 +15,10 @@ const logosPartner = [
   '7.png',
   '8.png',
   '9.png',
-<<<<<<< HEAD
-=======
   '10.png',
   '11.png',
   '12.png',
   '13.png',
->>>>>>> 8abf8f8 (update image)
 ];
 
 const Section = () => {
