@@ -17,6 +17,7 @@ const logosPartner = [
   '9.png',
   '10.png',
   '11.png',
+  '12.png',
 ];
 
 const Section = () => {
