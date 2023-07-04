@@ -74,6 +74,7 @@ const Section = () => {
         >
           <div className="">
             <ChevronRightIcon className="w-4 stroke-slate-400 stroke-[5px] hover:stroke-black" />
+            <ChevronRightIcon className="w-4 stroke-slate-400 stroke-[5px] hover:stroke-black" />
           </div>
         </button>
       </div>
