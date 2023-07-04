@@ -7,6 +7,7 @@ export const addImageError = (url: string) => {
 };
 
 export const renderImageById = (id: String) => {
+  if(!id) return ""
   const domain = id.includes('http') ? id : process?.env?.CMS;
   return domain + '/assets/' + id;
 };
