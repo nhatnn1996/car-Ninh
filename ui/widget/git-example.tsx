@@ -15,6 +15,10 @@ const logosPartner = [
   '7.png',
   '8.png',
   '9.png',
+<<<<<<< HEAD
+=======
+  '10.png',
+>>>>>>> 87654c6 (update)
 ];
 
 const Section = () => {
