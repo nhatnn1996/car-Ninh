@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 import {
   ArrowLongRightIcon,
@@ -29,6 +30,9 @@ import LatestCollection from './latestcollection';
 import ClientsFeedback from './clientsfeedback';
 
 const menus = ['HOME', 'PAGES', 'SERVICES', 'SHOP', 'NEWS', 'CONTACT'];
+=======
+import Section from './slider-example';
+>>>>>>> fc1c85a63091fb7714945dca41e7dc3eda1b63ae
 const Header = () => {
   return (
     <div className="">
@@ -490,4 +494,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Section;
