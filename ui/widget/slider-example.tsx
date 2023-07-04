@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useRef } from 'react';
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 const logosPartner = [
   '1.png',
@@ -19,7 +20,6 @@ const logosPartner = [
 const Section = () => {
   const ref: any = useRef();
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 8,
@@ -32,31 +32,45 @@ const Section = () => {
 
   return (
     <div className="mx-auto w-[1140px] py-32">
-      <div className="mb-20 text-center text-4xl font-bold">Popular Brands</div>
-      <div className="relative bg-stone-300 px-10 py-10">
+      <div className="relative flex items-center justify-center">
+        <div className="text-center text-4xl font-bold">Popular Brands</div>
+        <div className="absolute bottom-4">
+          <img src="/images/qq-xinhdep/flag-2.png" alt="" className="w-20" />
+        </div>
+      </div>
+
+      <div className="relative px-10 py-10">
         <button
-          className="absolute right-full"
+          className="absolute right-full top-[50%] translate-y-[-50%]"
           onClick={() => slider.slickPrev()}
         >
-          prev
+          <div className="">
+            <ChevronLeftIcon className="w-4 stroke-slate-400 stroke-[5px] hover:stroke-black" />
+          </div>
         </button>
         <Slider {...settings} ref={ref}>
           {logosPartner.map((logo, index) => {
             return (
-              <div
-                className="flex h-full w-full items-center justify-start"
-                key={logo + index}
-              >
-                <img src={'/images/qq-xinhdep/' + logo} alt="" />
+              <div key={logo + index} className="pb-6">
+                <div className="relative h-[97px]">
+                  <div className="flex h-[73px] w-full items-center justify-center">
+                    <img src={'/images/qq-xinhdep/' + logo} alt="" />
+                  </div>
+                  <p className="absolute top-full w-full text-center">
+                    ({index})
+                  </p>
+                </div>
               </div>
             );
           })}
         </Slider>
         <button
-          className="absolute left-full"
+          className="absolute left-full top-[50%] translate-y-[-50%]"
           onClick={() => slider.slickNext()}
         >
-          Next
+          <div className="">
+            <ChevronRightIcon className="w-4 stroke-slate-400 stroke-[5px] hover:stroke-black" />
+          </div>
         </button>
       </div>
     </div>
@@ -64,6 +78,3 @@ const Section = () => {
 };
 
 export default Section;
-
-// Swiper component with loop and pagination
-//
