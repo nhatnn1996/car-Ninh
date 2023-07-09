@@ -28,13 +28,20 @@ const ClientsFeedback = () => {
   const ref: any = useRef();
   const settings = {
     infinite: true,
+<<<<<<< HEAD
     speed: 2000,
+=======
+    speed: 500,
+>>>>>>> 02f9916 (update)
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     accessibility: true,
+<<<<<<< HEAD
     autoplay: true,
     autoplaySpeed: 2000,
+=======
+>>>>>>> 02f9916 (update)
   };
 
   return (
@@ -50,8 +57,12 @@ const ClientsFeedback = () => {
           <Slider {...settings} ref={ref}>
             {logosPartner.map((logo) => {
               return (
+<<<<<<< HEAD
                 <div key={logo} className="pb-6 relative">
                   <span className="text-[400px] text-red-400 font-bold opacity-25 absolute top-0 "> &rdquo;</span>
+=======
+                <div key={logo} className="pb-6 ">
+>>>>>>> 02f9916 (update)
                     <div className="h-[173px] w-[730px] mx-auto leading-9 text-center">
                         <em className='text-lg text-slate-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do them eiusmod tempor incididunt labore et dolorie magna aliqua. Ut enim adminim veniam, quis nostrud exercitation. ullamco laboris nisi ut aliquip ex eacommodo</em>
                         <div className="bg-slate-600 h-[1px] w-[200px] mx-auto mt-8"></div>
