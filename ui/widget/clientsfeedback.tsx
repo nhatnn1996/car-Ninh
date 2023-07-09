@@ -28,11 +28,13 @@ const ClientsFeedback = () => {
   const ref: any = useRef();
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     accessibility: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
 
   return (
@@ -44,18 +46,19 @@ const ClientsFeedback = () => {
             <img src="/images/bg-marketplace.png" alt="" />
           </div>
         </div>
-        <div className="relative px-10">
+        <div className="relative  pt-20">
           <Slider {...settings} ref={ref}>
             {logosPartner.map((logo) => {
               return (
-                <div key={logo} className="pb-6">
-                  <div className="relative h-[97px]">
-                    <div className="flex h-[73px] w-full items-center justify-center">
-                      <img src={'/images/pb/' + logo} alt="" />
+                <div key={logo} className="pb-6 relative">
+                  <span className="text-[400px] text-red-400 font-bold opacity-25 absolute top-0 "> &rdquo;</span>
+                    <div className="h-[173px] w-[730px] mx-auto leading-9 text-center">
+                        <em className='text-lg text-slate-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do them eiusmod tempor incididunt labore et dolorie magna aliqua. Ut enim adminim veniam, quis nostrud exercitation. ullamco laboris nisi ut aliquip ex eacommodo</em>
+                        <div className="bg-slate-600 h-[1px] w-[200px] mx-auto mt-8"></div>
+                        <h4 className='mt-5 text-2xl font-bold'>Richar Branson</h4>
+                        <h5 className='text-slate-400'>Vice Chairmanof WBL Group</h5>
                     </div>
-                    <p className="absolute top-full w-full text-center"></p>
                   </div>
-                </div>
               );
             })}
           </Slider>

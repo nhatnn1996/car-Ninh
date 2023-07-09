@@ -19,8 +19,8 @@ const LatestCollection = () => {
         </div>
 
         <div className="grid grid-cols-3 gap-8">
-          <div className=" group w-full rounded-md bg-white shadow-lg">
-            <div className="h-[233px] w-full overflow-hidden border-[2px] ">
+          <div className=" group w-full rounded-md shadow-lg overflow-hidden ">
+            <div className="h-[233px] w-full overflow-hidden">
               <img
                 src="/images/car-1.jpg"
                 alt=""
@@ -29,7 +29,7 @@ const LatestCollection = () => {
             </div>
             <div className="mx-8 my-8">
               <div className="relative text-xl font-bold">
-                <div className="group-hover:text-primary animate-300">
+                <div className="group-hover:text-primarygroup-hover:text-primary animate-300">
                   Gebrari Fa Doupa
                 </div>
                 <div className="absolute right-0 top-0 text-primary">
@@ -55,8 +55,8 @@ const LatestCollection = () => {
             </div>
           </div>
 
-          <div className=" group w-full rounded-md bg-white shadow-lg">
-            <div className="h-[233px] w-full overflow-hidden">
+          <div className=" group w-full rounded-md shadow-lg overflow-hidden">
+            <div className="h-[233px] w-full overflow-hidden ">
               <img
                 src="/images/car-2.jpg"
                 alt=""
@@ -89,8 +89,8 @@ const LatestCollection = () => {
             </div>
           </div>
 
-          <div className=" group w-full rounded-md bg-white shadow-lg">
-            <div className="h-[233px] w-full overflow-hidden">
+          <div className=" group w-full rounded-md shadow-lg overflow-hidden">
+            <div className="h-[233px] w-full overflow-hidden ">
               <img
                 src="/images/car-3.jpg"
                 alt=""
@@ -123,8 +123,8 @@ const LatestCollection = () => {
             </div>
           </div>
 
-          <div className=" group w-full rounded-md bg-white shadow-lg">
-            <div className="h-[233px] w-full overflow-hidden">
+          <div className=" group w-full rounded-md shadow-lg overflow-hidden">
+            <div className="h-[233px] w-full overflow-hidden ">
               <img
                 src="/images/car-4.jpg"
                 alt=""
@@ -157,8 +157,8 @@ const LatestCollection = () => {
             </div>
           </div>
 
-          <div className=" group w-full rounded-md bg-white shadow-lg">
-            <div className="h-[233px] w-full overflow-hidden">
+          <div className=" group w-full rounded-md shadow-lg overflow-hidden">
+            <div className="h-[233px] w-full overflow-hidden ">
               <img
                 src="/images/car-5.jpg"
                 alt=""
@@ -191,8 +191,8 @@ const LatestCollection = () => {
             </div>
           </div>
 
-          <div className=" group w-full rounded-md bg-white shadow-lg">
-            <div className="h-[233px] w-full overflow-hidden">
+          <div className=" group w-full rounded-md shadow-lg overflow-hidden">
+            <div className="h-[233px] w-full overflow-hidden ">
               <img
                 src="/images/car-6.jpg"
                 alt=""

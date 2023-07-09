@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client';
 import {
   ArrowLongRightIcon,
@@ -30,10 +29,7 @@ import LatestCollection from './latestcollection';
 import ClientsFeedback from './clientsfeedback';
 
 const menus = ['HOME', 'PAGES', 'SERVICES', 'SHOP', 'NEWS', 'CONTACT'];
-=======
-import Section from './slider-example';
->>>>>>> fc1c85a63091fb7714945dca41e7dc3eda1b63ae
-const Header = () => {
+const Section = () => {
   return (
     <div className="">
       {/* topmenu */}
@@ -64,7 +60,7 @@ const Header = () => {
         </div>
       </div>
       {/* menu */}
-      <div className="h-[70px] bg-slate-50">
+      <div className="top-0 h-[70px] bg-slate-50">
         <div className="mx-auto flex h-full w-[1170px] items-center">
           {/* menu vòng lặp */}
           <div className="ml-[260px] flex font-semibold uppercase text-black">
@@ -290,16 +286,15 @@ const Header = () => {
       <SectionPartner />
 
       {/* featured cars */}
-      <div className="">Featured Cars</div>
       <SectionFuturedCars />
 
       {/* Browse by type */}
       <SectionBrowse />
 
       {/* Clients Feedback */}
-<ClientsFeedback/>
+      <ClientsFeedback />
       {/* latest news */}
-      <div className="mx-auto w-[1110px] mt-[100px]">
+      <div className="mx-auto mt-[100px] w-[1110px]">
         <div className="flex-center relative text-5xl font-bold">
           Lastest News
           <div className="absolute bottom-5">
@@ -390,8 +385,8 @@ const Header = () => {
       </div>
 
       {/* FOOTER */}
-      <div className="">
-        <div className="h-[546px] w-full bg-black bg-[url('/images/footer-bg.jpeg')] bg-cover bg-center bg-no-repeat">
+      <div className="relative">
+        <div className="absolute mb-10 h-[546px] w-full bg-black opacity-95">
           <div className="mx-auto flex w-[1110px] pt-20 text-white">
             <div className="mr-20 w-[260px]">
               <div className="">
@@ -442,7 +437,7 @@ const Header = () => {
                   placeholder="Your Email"
                   className="h-[55px] w-[354px] rounded-full bg-slate-600 pl-5"
                 />
-                <button className="absolute mr-10 h-[47px] w-[70px] items-center rounded-full bg-primary">
+                <button className="absolute right-1 top-1 h-[47px] w-[70px] items-center rounded-full bg-primary">
                   <ArrowLongRightIcon className="ml-4 w-10 stroke-white" />
                 </button>
               </div>
@@ -456,18 +451,34 @@ const Header = () => {
           </div>
           <div className="">
             <div className="mx-auto mt-10 flex h-[98px] w-[1110px] items-center rounded-md bg-slate-600 text-white">
-              <div className="w-[636px] px-7">
+              <div className="w-[636px] pl-7">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
                   them eiusmod tempor incididunt labore et dolorie magna aliqua.
                 </p>
               </div>
-              <div className="w-[200px]"></div>
-              <div className="flex w-[274px] pl-11">
-                <BanknotesIcon className="mr-2 w-10" />
-                <BanknotesIcon className="mr-2 w-10" />
-                <BanknotesIcon className="mr-2 w-10" />
-                <BanknotesIcon className="mr-2 w-10" />
+              <div className="w-[180px]"></div>
+              <div className="flex w-[300px]">
+                <img
+                  src="/images/footer-1.png"
+                  alt=""
+                  className="mr-2 h-[37px] w-[61px]"
+                />
+                <img
+                  src="/images/footer-2.png"
+                  alt=""
+                  className="mr-2 h-[37px] w-[61px]"
+                />
+                <img
+                  src="/images/footer-3.png"
+                  alt=""
+                  className="mr-2 h-[37px] w-[61px]"
+                />
+                <img
+                  src="/images/footer-4.png"
+                  alt=""
+                  className="h-[37px] w-[61px]"
+                />
               </div>
             </div>
             <div className="mx-auto flex h-[77px] w-[1110px] items-center text-sm text-white">
@@ -489,6 +500,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <div className="h-[546px] w-full bg-[url('/images/footer-bg.jpeg')] bg-cover bg-center bg-no-repeat"></div>
       </div>
     </div>
   );

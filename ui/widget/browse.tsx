@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useRef } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
-const logosPartner = [
+const logosBrowse = [
   'bbt-1.png',
   'bbt-2.png',
   'bbt-3.png',
@@ -52,7 +52,7 @@ const SectionBrowse = () => {
           </div>
         </button>
         <Slider {...settings} ref={ref}>
-          {logosPartner.map((logo, index) => {
+          {logosBrowse.map((logo, index) => {
             return (
               <div key={logo + index} className="pb-6">
                 <div className="relative h-[97px]">
