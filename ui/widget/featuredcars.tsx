@@ -33,13 +33,13 @@ const SectionFuturedCars = () => {
   return (
     <div className="mb-[170px] w-full ">
       <div className="h-[461px] w-full bg-[url('/images/car-feature-bg.jpg')] bg-cover bg-center bg-no-repeat">
-        <div className="w-[1190px] pt-[115px] px-12 mx-auto">
+        <div className="mx-auto w-[1190px] px-12 pt-[115px]">
           <div className=" text-4xl font-bold text-white">Futured Cars</div>
         </div>
         <div className="relative mx-auto w-[1190px] px-10 py-10 ">
-          <div className="absolute bottom-full right-[60px] flex gap-4 items-center ">
+          <div className="absolute bottom-full right-[60px] flex items-center gap-4 ">
             <button
-              className="w-12 h-12 rounded-full border-white border-[1px] duration-700 hover:bg-primary/80 hover:border-0 hover:border-primary/80"
+              className="h-12 w-12 rounded-full border-[1px] border-white duration-700 hover:border-0 hover:border-primary/80 hover:bg-primary/80"
               onClick={() => ref.current.slickPrev()}
             >
               <div className="flex items-center justify-center">
@@ -47,7 +47,7 @@ const SectionFuturedCars = () => {
               </div>
             </button>
             <button
-              className="w-12 h-12 rounded-full border-white border-[1px] duration-700 hover:bg-primary/80 hover:border-0 hover:border-primary/80"
+              className="h-12 w-12 rounded-full border-[1px] border-white duration-700 hover:border-0 hover:border-primary/80 hover:bg-primary/80"
               onClick={() => {
                 ref.current.slickNext();
               }}
