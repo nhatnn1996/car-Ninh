@@ -27,57 +27,15 @@ import SectionBrowse from './browse';
 import SectionFuturedCars from './featuredcars';
 import LatestCollection from './latestcollection';
 import ClientsFeedback from './clientsfeedback';
+import Footer from '../details/footer';
+import Header from '../details/header';
 
 const menus = ['HOME', 'PAGES', 'SERVICES', 'SHOP', 'NEWS', 'CONTACT'];
 const Section = () => {
   return (
     <div className="">
       {/* topmenu */}
-      <div className="h-[50px] bg-red-500">
-        <div className=" mx-auto flex h-full w-[1170px]">
-          {/* logo */}
-          <div className=" logo relative h-full w-[190px] ">
-            <div className="absolute left-0 top-0 h-full w-full">
-              <img className="shadow-xl" src="/images/logo-car.png" alt="" />
-            </div>
-          </div>
-          {/* chữ 1 */}
-          <div className="ml-20 flex h-full items-center text-sm text-white">
-            <ClockIcon className="mr-1 w-5 stroke-white" />
-            Monday-Saturday 7:00AM - 6:00PM
-          </div>
-          {/* chữ 2 */}
-          <div className="ml-20 flex h-full items-center text-sm text-white">
-            <MapPinIcon className="mr-1 w-5 stroke-white" />
-            1105 Roosevelt Street, CA
-          </div>
-          {/* chữ 3 */}
-          <div className="text-md ml-auto flex h-full items-center bg-white px-9 font-bold">
-            <PhoneArrowDownLeftIcon className="mr-2 w-5 stroke-primary" />
-            <span className="text-primary">095</span>
-            <span className="ml-1 text-black">1856 558</span>
-          </div>
-        </div>
-      </div>
-      {/* menu */}
-      <div className="top-0 h-[70px] bg-slate-50">
-        <div className="mx-auto flex h-full w-[1170px] items-center">
-          {/* menu vòng lặp */}
-          <div className="ml-[260px] flex font-semibold uppercase text-black">
-            {menus.map((name, index) => (
-              <div key={index + name} className="mr-10">
-                {name}
-              </div>
-            ))}
-          </div>
-          {/* icon */}
-          <div className="mx-auto mr-10 flex">
-            <ShoppingBagIcon className="w-7 stroke-black" />
-            <div className="mx-3 h-6 w-[1px] bg-black"></div>
-            <MagnifyingGlassIcon className="w-7 stroke-black" />
-          </div>
-        </div>
-      </div>
+     <Header/>
 
       {/* slide */}
       <div className="h-full">
@@ -385,123 +343,7 @@ const Section = () => {
       </div>
 
       {/* FOOTER */}
-      <div className="relative">
-        <div className="absolute mb-10 h-[546px] w-full bg-black opacity-95">
-          <div className="mx-auto flex w-[1110px] pt-20 text-white">
-            <div className="mr-20 w-[260px]">
-              <div className="">
-                <img
-                  src="/images/logo-footer.png"
-                  alt=""
-                  className="h-[140px] w-[190px]"
-                />
-              </div>
-              <div className="mb-3 flex">
-                <MapPinIcon className="mb-2 mr-2 w-5 stroke-primary" />
-                Wave, Via Habro Derennio 22/b 52100 Arezzo, Italy
-              </div>
-              <div className="mb-3 flex">
-                <EnvelopeIcon className="mr-2 w-5 stroke-primary " />
-                ask@example.com
-              </div>
-              <div className="flex">
-                <PhoneIcon className="mr-2 w-5 stroke-primary" />
-                095 1856 558 (Toll Free)
-              </div>
-            </div>
-            <div className="text-md mr-20 ">
-              <p className="mb-5 text-2xl font-bold hover:text-primary">
-                Our Info
-              </p>
-              <p className="mb-2 hover:text-primary">About us</p>
-              <p className="mb-2 hover:text-primary">Our Service</p>
-              <p className="mb-2 hover:text-primary">Our Shop</p>
-              <p className="mb-2 hover:text-primary">Blog</p>
-              <p className="mb-2 hover:text-primary">Contact</p>
-            </div>
-            <div className="text-md mr-20">
-              <p className="mb-5 text-2xl font-bold hover:text-primary">
-                Quick Link
-              </p>
-              <p className="mb-2 hover:text-primary">Finance</p>
-              <p className="mb-2 hover:text-primary">Compare Vehicles</p>
-              <p className="mb-2 hover:text-primary">General FAQ</p>
-              <p className="mb-2 hover:text-primary">Testimonial</p>
-              <p className="mb-2 hover:text-primary">Admin Login</p>
-            </div>
-            <div className="">
-              <p className="mb-5 text-2xl font-bold">Subscribe us</p>
-              <div className="relative">
-                <input
-                  type="text"
-                  placeholder="Your Email"
-                  className="h-[55px] w-[354px] rounded-full bg-slate-600 pl-5"
-                />
-                <button className="absolute right-1 top-1 h-[47px] w-[70px] items-center rounded-full bg-primary">
-                  <ArrowLongRightIcon className="ml-4 w-10 stroke-white" />
-                </button>
-              </div>
-              <div className="mt-8 flex">
-                <FaceSmileIcon className="mr-2 w-10" />
-                <FaceSmileIcon className="mr-2 w-10" />
-                <FaceSmileIcon className="mr-2 w-10" />
-                <FaceSmileIcon className="w-10" />
-              </div>
-            </div>
-          </div>
-          <div className="">
-            <div className="mx-auto mt-10 flex h-[98px] w-[1110px] items-center rounded-md bg-slate-600 text-white">
-              <div className="w-[636px] pl-7">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
-                  them eiusmod tempor incididunt labore et dolorie magna aliqua.
-                </p>
-              </div>
-              <div className="w-[180px]"></div>
-              <div className="flex w-[300px]">
-                <img
-                  src="/images/footer-1.png"
-                  alt=""
-                  className="mr-2 h-[37px] w-[61px]"
-                />
-                <img
-                  src="/images/footer-2.png"
-                  alt=""
-                  className="mr-2 h-[37px] w-[61px]"
-                />
-                <img
-                  src="/images/footer-3.png"
-                  alt=""
-                  className="mr-2 h-[37px] w-[61px]"
-                />
-                <img
-                  src="/images/footer-4.png"
-                  alt=""
-                  className="h-[37px] w-[61px]"
-                />
-              </div>
-            </div>
-            <div className="mx-auto flex h-[77px] w-[1110px] items-center text-sm text-white">
-              <div className="w-[310px]">
-                Copyright Reserved by{' '}
-                <span className="text-primary underline underline-offset-2">
-                  DroitThemes
-                </span>{' '}
-                2020
-              </div>
-              <div className="w-[480px]"></div>
-              <div className="flex w-[320px] text-slate-600">
-                <div className="">Terms of use</div>
-                <div className="mx-3 h-6 w-[1px] bg-slate-600"></div>
-                <div className="">Privacy Environmental</div>
-                <div className="mx-3 h-6 w-[1px] bg-slate-600"></div>
-                <div className="">Policy</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-[546px] w-full bg-[url('/images/footer-bg.jpeg')] bg-cover bg-center bg-no-repeat"></div>
-      </div>
+     <Footer/>
     </div>
   );
 };

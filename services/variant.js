@@ -1,7 +1,7 @@
 export const variants = {
   hidden: { opacity: 0, height: 0 },
   enter: { opacity: 1, height: 'auto' },
-  exit: { opacity: 0 },
+  exit: { opacity: 0, height: 0 },
 };
 
 export const variantsHidden = {

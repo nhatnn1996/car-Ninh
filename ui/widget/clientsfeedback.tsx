@@ -9,19 +9,7 @@ const logosPartner = [
   'pb-1.png',
   'pb-2.png',
   'pb-3.png',
-  'pb-4.png',
-  'pb-5.png',
-  'pb-6.png',
-  'pb-7.png',
-  'pb-8.png',
-  'pb-1.png',
-  'pb-2.png',
-  'pb-3.png',
-  'pb-4.png',
-  'pb-5.png',
-  'pb-6.png',
-  'pb-7.png',
-  'pb-8.png',
+
 ];
 
 const ClientsFeedback = () => {
@@ -35,6 +23,7 @@ const ClientsFeedback = () => {
     accessibility: true,
     autoplay: true,
     autoplaySpeed: 2000,
+    dots: true,
   };
 
   return (
@@ -46,12 +35,12 @@ const ClientsFeedback = () => {
             <img src="/images/bg-marketplace.png" alt="" />
           </div>
         </div>
-        <div className="relative  pt-20">
+        <div className="relative  pt-10">
           <Slider {...settings} ref={ref}>
             {logosPartner.map((logo) => {
               return (
-                <div key={logo} className="pb-6 relative">
-                  <span className="text-[400px] text-red-400 font-bold opacity-25 absolute top-0 "> &rdquo;</span>
+                <div key={logo} className="pb-6 relative pt-10">
+                  <span className="text-[400px] text-red-400 font-bold opacity-10 absolute -top-40 left-[50%] translate-x-[-50%]"> &rdquo;</span>
                     <div className="h-[173px] w-[730px] mx-auto leading-9 text-center">
                         <em className='text-lg text-slate-600'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do them eiusmod tempor incididunt labore et dolorie magna aliqua. Ut enim adminim veniam, quis nostrud exercitation. ullamco laboris nisi ut aliquip ex eacommodo</em>
                         <div className="bg-slate-600 h-[1px] w-[200px] mx-auto mt-8"></div>
